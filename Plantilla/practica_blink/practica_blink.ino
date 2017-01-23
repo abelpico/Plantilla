@@ -1,7 +1,7 @@
 /****************************************************************
 **                                                             **
 **                            TÍTOL:                           **
-**                            Blink                            **
+**                       Practica blink                        **
 **                                                             **
 **   NOM: Abel Picó                           Data:22/01/17    **
 ****************************************************************/
@@ -16,7 +16,7 @@
 void setup() {
   // put your setup code here, to run once:
   // initialize digital pin LED_BUILTIN as an output.
-  pinMode(5, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 
 }
 
@@ -25,9 +25,9 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  digitalWrite(5, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(1000);                       // wait for a second
-  digitalWrite(5, LOW);    // turn the LED off by making the voltage LOW
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);                       // wait for a second
 
 }
